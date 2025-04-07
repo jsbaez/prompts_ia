@@ -1,0 +1,66 @@
+Tu tarea es crear un resumen detallado de la conversacion hasta ahora, prestando mucha atencion a las peticiones explicitas del usuario y a tus acciones previas.
+Este resumen deberia ser exhaustivo al capturar detalles tecnicos, patrones de codigo y decisiones arquitectonicas que serian esenciales para continuar el trabajo de desarrollo sin perder contexto.
+
+Antes de proporcionar tu resumen final, envuelve tu analisis en etiquetas <analysis> para organizar tus pensamientos y asegurarte de que has cubierto todos los puntos necesarios. En tu proceso de analisis:
+
+1. Analiza cronologicamente cada mensaje y seccion de la conversacion. Para cada seccion identifica a fondo:
+   - Las peticiones e intenciones explicitas del usuario
+   - Tu enfoque para abordar las peticiones del usuario
+   - Decisiones clave, conceptos tecnicos y patrones de codigo
+   - Detalles especificos como nombres de archivo, fragmentos de codigo completos, firmas de funcion, ediciones de archivo, etc.
+2. Verifica la precision tecnica y la integridad, abordando cada elemento requerido a fondo.
+
+Tu resumen deberia incluir las siguientes secciones:
+
+1. Peticion e Intento Primario: Captura todas las peticiones e intentos explicitos del usuario en detalle.
+2. Conceptos Tecnicos Clave: Enumera todos los conceptos tecnicos, tecnologias y frameworks importantes discutidos.
+3. Archivos y Secciones de Codigo: Enumera los archivos y secciones de codigo especificos examinados, modificados o creados. Presta especial atencion a los mensajes mas recientes e incluye fragmentos de codigo completos donde sea aplicable e incluye un resumen de por que esta lectura o edicion de archivo es importante.
+4. Resolucion de Problemas: Documenta los problemas resueltos y cualquier esfuerzo de solucion de problemas en curso.
+5. Tareas Pendientes: Describe cualquier tarea pendiente que se te haya pedido explicitamente que realices.
+6. Trabajo Actual: Describe en detalle precisamente en que se estaba trabajando inmediatamente antes de esta solicitud de resumen, prestando especial atencion a los mensajes mas recientes tanto del usuario como del asistente. Incluye nombres de archivo y fragmentos de codigo donde sea aplicable.
+7. Proximo Paso Opcional: Enumera el proximo paso que daras que este relacionado con el trabajo mas reciente que estabas haciendo. IMPORTANTE: asegúrate de que este paso este DIRECTAMENTE en linea con las peticiones explicitas del usuario y la tarea en la que estabas trabajando inmediatamente antes de esta solicitud de resumen. Si tu ultima tarea concluyo, entonces solo enumera los siguientes pasos si estan explicitamente en linea con la peticion del usuario. No comiences con solicitudes tangenciales sin confirmarlo primero con el usuario.
+8. Si hay un proximo paso, incluye citas directas de la conversacion mas reciente que muestren exactamente en que tarea estabas trabajando y donde lo dejaste. Esto deberia ser verbatim para asegurar que no haya desviacion en la interpretacion de la tarea.
+
+Aqui tienes un ejemplo de como deberia estructurarse tu salida:
+
+<example>
+<analysis>
+[Tu proceso de pensamiento, asegurandote de que todos los puntos esten cubiertos a fondo y con precision]
+</analysis>
+
+<summary>
+1. Peticion e Intento Primario:
+   [Descripcion detallada]
+
+2. Conceptos Tecnicos Clave:
+   - [Concepto 1]
+   - [Concepto 2]
+   - [...]
+
+3. Archivos y Secciones de Codigo:
+   - [Nombre de Archivo 1]
+      - [Resumen de por que este archivo es importante]
+      - [Resumen de los cambios realizados en este archivo, si los hay]
+      - [Fragmento de Codigo Importante]
+   - [Nombre de Archivo 2]
+      - [Fragmento de Codigo Importante]
+   - [...]
+
+4. Resolucion de Problemas:
+   [Descripcion de los problemas resueltos y la solucion de problemas en curso]
+
+5. Tareas Pendientes:
+   - [Tarea 1]
+   - [Tarea 2]
+   - [...]
+
+6. Trabajo Actual:
+   [Descripcion precisa del trabajo actual]
+
+7. Proximo Paso Opcional:
+   [Proximo paso opcional a seguir]
+
+</summary>
+</example>
+
+Por favor, proporciona tu resumen basado en la conversacion hasta ahora, siguiendo esta estructura y asegurando precision y exhaustividad en tu respuesta.
