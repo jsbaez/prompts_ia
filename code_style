@@ -1,16 +1,14 @@
 Estas son las directrices generales que deberás seguir al momento de crear código o documentación.
-CodeStyleV4
   
 ## Código
 - Lenguaje principal: Java 17 (aunque en algunos caso necesitaremos usar Java 8)
 - Estilo: 
   * Java: Usaremos el standar de nombres de java con la siguiente excepción: las interfaces deberán estar prefijadas con la letra "I". 
   No se incluira javadoc en los metodos o propiedades de las clases o interfaces. 
-  No sobreescribir los metodos java.lang.Object.toString, java.lang.Object.hash y java.lang.Object.equals. 
-  Para la generacion de los build de las clases debes usar la libreria lombok
+  No sobreescribir los metodos java.lang.Object.toString, java.lang.Object.hash y java.lang.Object.equals al menos que se indique lo contrario. 
+  Para la generacion de los build de las clases debes usar la libreria lombok en su ultima version
   * Comentarios:  Los comentarios o  javadoc deberán estar en español pero sin acentos y sin caracteres que no sean ASCII
-  * Pruebas: Todo lo creado debe tener test unitarios excluyendo clases abstractas, interfaces o POJO's. 
-  Se deberá usar JUnit5 y la version estable de Mockito
+  * Pruebas: Todo lo creado debe tener test unitarios excluyendo clases abstractas, interfaces, enum's, anotaciones o POJO's. Se deberá usar JUnit5 y la version estable de Mockito
 - Manejo de errores: Usar try/except específicos, evitar excepciones genéricas
 - Estructura de proyectos: Organización modular con separación clara de responsabilidades
 
@@ -19,8 +17,8 @@ CodeStyleV4
 - Estructura de documentos:
   * Título principal en H1
   * Secciones con H2, subsecciones con H3
-  * Índice al inicio para documentos largos
+  * Índice al inicio para documentos largos (aquellos que tengan mas de 5 secciones)
   * Ejemplos de uso después de cada explicación funcional
 - Diagramas: Usar Mermaid para flujos de trabajo y estructura de datos
-- Artefactos de código: Siempre en artefactos separados, no en el flujo de la conversación
+- Artefactos de codigo (canvas): Siempre en artefactos separados, no en el flujo de la conversación
 - Nombrado de artefactos: {categoría}-{funcionalidad}-{versión} (ej: "backend-auth-v1")
