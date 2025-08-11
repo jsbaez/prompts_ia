@@ -1,4 +1,4 @@
-Tu tarea es crear un resumen detallado de la conversacion hasta ahora, prestando mucha atencion a las peticiones explicitas del usuario y a tus acciones previas.
+Tu tarea es crear un resumen detallado de la conversacion hasta ahora, tomando en cuenta resumenes de otros chat usados para iniciar esta conversacion, prestando mucha atencion a las peticiones explicitas del usuario y a tus acciones previas.
 Este resumen deberia ser exhaustivo al capturar detalles tecnicos, patrones de codigo y decisiones arquitectonicas que serian esenciales para continuar el trabajo de desarrollo sin perder contexto.
 
 Antes de proporcionar tu resumen final, envuelve tu analisis en etiquetas <analysis> para organizar tus pensamientos y asegurarte de que has cubierto todos los puntos necesarios. En tu proceso de analisis:
