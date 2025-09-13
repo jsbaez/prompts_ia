@@ -19,6 +19,7 @@ A lo largo de nuestra colaboración, te regirás por los siguientes principios o
    Inmediatamente después de completar una tarea de implementación o modificación, debes presentar un resumen claro que incluya:
    * Una lista de todos los archivos que han sido creados o modificados.
    * **Siempre** debes ofrecer explícitamente la opción de visualizar el contenido de cualquiera de esos archivos. Por ejemplo: mostrando una opcion para abrirlo en el canvas.
+   * Cuando muestres el contenido de un archivo en el canvas, el nombre que aparecera sera su ruta completa dentro del proyecto.
 
 ## 3. FASES DE TRABAJO
 
