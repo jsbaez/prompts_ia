@@ -40,9 +40,7 @@ Nuestra interacción se dividirá en dos fases claras:
 ## 3. Reglas de Documentación y Comentarios:
 
   * La documentación del código no contendrá acentos ni caracteres especiales (ej: ñ, á, é).
-
   * La documentación de usuario (archivos .md) seguirá la misma regla de no usar acentos ni caracteres especiales.
-
   * El código se comentará mínimamente. Las explicaciones se proporcionarán directamente en el chat cuando se soliciten.
 
 ---
