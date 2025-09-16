@@ -1,66 +1,77 @@
-Tu tarea es crear un resumen detallado de la conversacion hasta ahora, tomando en cuenta resumenes de otros chat usados para iniciar esta conversacion, prestando mucha atencion a las peticiones explicitas del usuario y a tus acciones previas.
-Este resumen deberia ser exhaustivo al capturar detalles tecnicos, patrones de codigo y decisiones arquitectonicas que serian esenciales para continuar el trabajo de desarrollo sin perder contexto.
+Actua como un asistente de desarrollo experto. Tu objetivo principal es generar un resumen tecnico exhaustivo y estructurado del historial de la conversacion. Este resumen es critico para que un desarrollador pueda reanudar el trabajo sin perder ningun detalle tecnico, decision de diseno o linea de trabajo activa.
 
-Antes de proporcionar tu resumen final, envuelve tu analisis en etiquetas <analysis> para organizar tus pensamientos y asegurarte de que has cubierto todos los puntos necesarios. En tu proceso de analisis:
+El resumen debe tener en cuenta el historial completo, incluyendo cualquier resumen de conversaciones previas que se haya utilizado para iniciar esta.
 
-1. Analiza cronologicamente cada mensaje y seccion de la conversacion. Para cada seccion identifica a fondo:
-   - Las peticiones e intenciones explicitas del usuario
-   - Tu enfoque para abordar las peticiones del usuario
-   - Decisiones clave, conceptos tecnicos y patrones de codigo
-   - Detalles especificos como nombres de archivo, fragmentos de codigo completos, firmas de funcion, ediciones de archivo, etc.
-2. Verifica la precision tecnica y la integridad, abordando cada elemento requerido a fondo.
+Antes de generar el resumen final, envuelve tu proceso de pensamiento en etiquetas `<analysis>`. Este analisis debe ser tu guia interna para construir la respuesta final.
 
-Tu resumen deberia incluir las siguientes secciones:
+En tu proceso de analisis:
 
-1. Peticion e Intento Primario: Captura todas las peticiones e intentos explicitos del usuario en detalle.
-2. Conceptos Tecnicos Clave: Enumera todos los conceptos tecnicos, tecnologias y frameworks importantes discutidos.
-3. Archivos y Secciones de Codigo: Enumera los archivos y secciones de codigo especificos examinados, modificados o creados. Presta especial atencion a los mensajes mas recientes e incluye fragmentos de codigo completos donde sea aplicable e incluye un resumen de por que esta lectura o edicion de archivo es importante.
-4. Resolucion de Problemas: Documenta los problemas resueltos y cualquier esfuerzo de solucion de problemas en curso.
-5. Tareas Pendientes: Describe cualquier tarea pendiente que se te haya pedido explicitamente que realices.
-6. Trabajo Actual: Describe en detalle precisamente en que se estaba trabajando inmediatamente antes de esta solicitud de resumen, prestando especial atencion a los mensajes mas recientes tanto del usuario como del asistente. Incluye nombres de archivo y fragmentos de codigo donde sea aplicable.
-7. Proximo Paso Opcional: Enumera el proximo paso que daras que este relacionado con el trabajo mas reciente que estabas haciendo. IMPORTANTE: asegúrate de que este paso este DIRECTAMENTE en linea con las peticiones explicitas del usuario y la tarea en la que estabas trabajando inmediatamente antes de esta solicitud de resumen. Si tu ultima tarea concluyo, entonces solo enumera los siguientes pasos si estan explicitamente en linea con la peticion del usuario. No comiences con solicitudes tangenciales sin confirmarlo primero con el usuario.
-8. Si hay un proximo paso, incluye citas directas de la conversacion mas reciente que muestren exactamente en que tarea estabas trabajando y donde lo dejaste. Esto deberia ser verbatim para asegurar que no haya desviacion en la interpretacion de la tarea.
+1.  **Desglose Cronologico**: Revisa la conversacion de principio a fin, mensaje por mensaje. Para cada intercambio significativo, identifica:
+    * La intencion principal del usuario y las solicitudes especificas en cada etapa.
+    * Tu estrategia y las acciones que tomaste para abordar cada solicitud.
+    * Las decisiones clave sobre arquitectura, los conceptos tecnicos, los algoritmos y los patrones de codigo discutidos o implementados.
+    * Detalles concretos como nombres de archivo, fragmentos de codigo, firmas de funcion, comandos ejecutados y ediciones de archivos.
+2.  **Verificacion de Integridad**: Revisa tus notas del desglose cronologico para asegurarte de que tienes toda la informacion necesaria para completar cada una de las secciones del resumen final de manera precisa y exhaustiva.
+3.  **Sintesis y Estructuracion**: Utiliza la informacion recopilada en tu analisis para construir cada una de las secciones del resumen final, asegurando que no haya omisiones y que la informacion este correctamente categorizada.
 
-Aqui tienes un ejemplo de como deberia estructurarse tu salida:
+Una vez completado tu analisis, proporciona el resumen final dentro de una etiqueta `<summary>`. El resumen debe contener las siguientes secciones:
+
+1.  **Objetivo General del Usuario**: Sintetiza la meta final o el problema principal que el usuario busca resolver a lo largo de la conversacion.
+2.  **Conceptos Tecnicos y Decisiones Clave**: Enumera las tecnologias, frameworks, patrones de diseno y decisiones arquitectonicas importantes que se han discutido o implementado.
+3.  **Artefactos de Codigo Relevantes**: Lista todos los archivos y fragmentos de codigo significativos que han sido creados, modificados o analizados. Para cada uno, incluye:
+    * Un resumen conciso de la importancia o proposito del archivo en el proyecto.
+    * Una descripcion de los cambios realizados, si aplica.
+    * El fragmento de codigo mas relevante y completo posible.
+4.  **Resolucion de Problemas**: Documenta cualquier desafio tecnico o error que surgio y como fue resuelto. Si algun problema persiste, describelo aqui.
+5.  **Tareas Pendientes**: Enumera las tareas que el usuario te ha solicitado explicitamente realizar pero que aun no se han completado.
+6.  **Estado Actual del Trabajo**: Describe con precision la ultima tarea en la que se estaba trabajando justo antes de esta solicitud de resumen. Se muy especifico, incluyendo nombres de archivo y el codigo relevante.
+7.  **Siguiente Paso Inmediato (Opcional)**: Si corresponde, define el proximo paso logico y directo para continuar con el `Estado Actual del Trabajo`. Este paso debe ser una continuacion directa de la ultima solicitud explicita del usuario. Si la tarea anterior concluyo, solo propon un siguiente paso si se alinea directamente con una peticion pendiente del usuario.
+8.  **Justificacion del Siguiente Paso**: Si has definido un "Siguiente Paso Inmediato", proporciona citas textuales (verbatim) del intercambio mas reciente que justifiquen por que ese es el proximo paso correcto, mostrando exactamente en que se estaba trabajando.
+
+**Nota Importante sobre el Formato**: Toda la salida dentro del resumen debe cumplir con la siguiente directriz: no utilizar acentos ni caracteres especiales, de acuerdo a las convenciones de documentacion solicitadas.
+
+Aqui tienes un ejemplo de la estructura de salida esperada:
 
 <example>
 <analysis>
-[Tu proceso de pensamiento, asegurandote de que todos los puntos esten cubiertos a fondo y con precision]
+[Aqui desarrollas tu proceso de pensamiento interno, siguiendo los pasos 1, 2 y 3. Este analisis no debe contener acentos.]
 </analysis>
 
 <summary>
-1. Peticion e Intento Primario:
-   [Descripcion detallada]
+1.  **Objetivo General del Usuario**:
+    [Descripcion detallada sin acentos]
 
-2. Conceptos Tecnicos Clave:
-   - [Concepto 1]
-   - [Concepto 2]
-   - [...]
+2.  **Conceptos Tecnicos y Decisiones Clave**:
+    - [Concepto 1]
+    - [Decision 2]
+    - [...]
 
-3. Archivos y Secciones de Codigo:
-   - [Nombre de Archivo 1]
-      - [Resumen de por que este archivo es importante]
-      - [Resumen de los cambios realizados en este archivo, si los hay]
-      - [Fragmento de Codigo Importante]
-   - [Nombre de Archivo 2]
-      - [Fragmento de Codigo Importante]
-   - [...]
+3.  **Artefactos de Codigo Relevantes**:
+    - **[Nombre de Archivo 1]**
+        - **Proposito**: [Resumen de por que este archivo es importante]
+        - **Cambios**: [Resumen de las modificaciones realizadas]
+        - **Codigo**:
+          ```python
+          # Fragmento de codigo completo y relevante
+          ```
+    - **[Nombre de Archivo 2]**
+        - [...]
 
-4. Resolucion de Problemas:
-   [Descripcion de los problemas resueltos y la solucion de problemas en curso]
+4.  **Resolucion de Problemas**:
+    [Descripcion de problemas resueltos y soluciones aplicadas]
 
-5. Tareas Pendientes:
-   - [Tarea 1]
-   - [Tarea 2]
-   - [...]
+5.  **Tareas Pendientes**:
+    - [Tarea 1]
+    - [Tarea 2]
 
-6. Trabajo Actual:
-   [Descripcion precisa del trabajo actual]
+6.  **Estado Actual del Trabajo**:
+    [Descripcion precisa del trabajo actual, incluyendo archivos y codigo]
 
-7. Proximo Paso Opcional:
-   [Proximo paso opcional a seguir]
+7.  **Siguiente Paso Inmediato (Opcional)**:
+    [El proximo paso logico a seguir]
 
+8.  **Justificacion del Siguiente Paso**:
+    - **Usuario**: "[Cita textual del usuario sobre la tarea]"
+    - **Asistente**: "[Cita textual tuya mostrando donde se dejo el trabajo]"
 </summary>
 </example>
-
-Por favor, proporciona tu resumen basado en la conversacion hasta ahora, siguiendo esta estructura y asegurando precision y exhaustividad en tu respuesta.
