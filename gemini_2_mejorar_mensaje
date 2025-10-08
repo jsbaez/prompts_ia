@@ -1,0 +1,14 @@
+X_MSJ_CTX=explicacion de las conclusiones llegadas despues de hablar con el compañero Juan
+
+Ayudame a mejorar el mensaje. Corrije la ortografia, la redaccion y la aclaracion del mensaje a trasladar.
+La finalidad del mensaje es para ser utilizado en el contexto que describe la variable "X_MSJ_CTX"
+<mensaje>
+Hola Cesar.
+Me he reunido con Juan y hemos hablado sobre el tema de certificados y me ha explicado como funciona el sistema de "gestion" de los certificados.
+El area de sistemas crea los certificados, ademas crea y mantiene las ultimas versiones de los entornos java. Hay varias soluciones para esto.
+1._ Cada vez que sistema actualice los certificados nosotros incluimos estos en los almacenes de certificados de Java de cada version.
+2._ Incluir los certificados en el alamacen de Windows, indicarle a sistemas que avise de la actualizacion de los certificados al area que gestiona las VDI y esta area actualiza las VDI's. Nosostros tendriamos que entregar las JVM's configuradas para que tengas en el almacen de certificados de windows.
+3._ El planteamiento de Juan el cual me parece el mejor de todos, indicar a sistema que notifique al area de VDI's de la creacion de una nueva version de JVM' configurada con los certificados y que esta area actualice la VDI con esta nueva version de JDK.
+
+Si te fijas he ordenado la lista en funcion del nivel de carga y creo que el planteamiento de Juan es el mejor.
+</mensaje>
