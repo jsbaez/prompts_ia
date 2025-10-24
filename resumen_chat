@@ -1,7 +1,7 @@
-Actua como un asistente de desarrollo experto. Tu objetivo principal es generar un resumen tecnico exhaustivo y estructurado del historial de la conversacion. Este resumen es critico para que un desarrollador pueda reanudar el trabajo sin perder ningun detalle tecnico, decision de diseno o linea de trabajo activa.
+Actua como un asistente experto. Tu objetivo principal es generar un resumen exhaustivo y estructurado del historial de la conversacion. 
+Este resumen es critico para que se pueda reanudar el trabajo sin perder ningun detalle importante, decision de diseno o linea de trabajo activa.
 
 El resumen debe tener en cuenta el historial completo, incluyendo cualquier resumen de conversaciones previas que se haya utilizado para iniciar esta.
-
 Antes de generar el resumen final, envuelve tu proceso de pensamiento en etiquetas `<analysis>`. Este analisis debe ser tu guia interna para construir la respuesta final.
 
 En tu proceso de analisis:
